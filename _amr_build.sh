@@ -4,7 +4,7 @@
 pushd opencore-amr || exit
 
 AMR_API="$(grep 'PACKAGE_VERSION=' < ${LIB_OPENCORE}/configure | sed 's/^.*\([0-9]\.[0-9]\.[0-9]*\).*$/\1/')"
-echo -e "\n\n** BUILD STARTED: opencore-amr-v${AMR_API} for ${1} **"
+echo -e "\n\n** BUILD STARTED1: opencore-amr-v${AMR_API} for ${1} **"
 
 # --disable-asm disable
 # Must exclude the option for arm64-v8a.

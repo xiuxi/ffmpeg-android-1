@@ -31,7 +31,7 @@ LIB_FFMPEG=ffmpeg
 pushd ${LIB_FFMPEG} || return
 VERSION=$(cat RELEASE)
 
-echo -e "\n\n** BUILD STARTED: ${LIB_FFMPEG}-v${VERSION} for ${1} **"
+echo -e "\n\n** BUILD STARTED2: ${LIB_FFMPEG}-v${VERSION} for ${1} **"
 
 # Must include option --disable-asm; otherwise ffmpeg-3.4.6 has problem and crash system:
 # armeabi-v7a: org.atalk.android A/libc: Fatal signal 7 (SIGBUS), code 1, fault addr 0x9335c00c in tid 20032 (Loop thread: ne)

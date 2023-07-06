@@ -4,7 +4,7 @@
 
 pushd lame || exit
 LAME_VER="$(grep 'PACKAGE_VERSION=' < ./configure | sed 's/^.*\([1-9]\.[0-9]*\).*$/\1/')"
-echo -e "\n\n** BUILD STARTED: lame-v${LAME_VER} for ${1} **"
+echo -e "\n\n** BUILD STARTED3: lame-v${LAME_VER} for ${1} **"
 
 make clean
 

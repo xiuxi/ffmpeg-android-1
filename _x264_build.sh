@@ -3,7 +3,7 @@
 
 pushd x264 || exit
 X264_API="$(grep '#define X264_BUILD' < x264.h | sed 's/^.* \([1-9][0-9]*\).*$/\1/')"
-echo -e "\n\n** BUILD STARTED: x264-v${X264_API} for ${1} **"
+echo -e "\n\n** BUILD STARTED5: x264-v${X264_API} for ${1} **"
 
 # --disable-asm disable
 # Must not include the option for arm64-v8a.

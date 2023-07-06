@@ -45,7 +45,7 @@ pushd libvpx || exit
 if [[ -f "./build/make/version.sh" ]]; then
   version=`"./build/make/version.sh" --bare .`
 fi
-echo -e "\n\n** BUILD STARTED: vpx-${version} for ${1} **"
+echo -e "\n\n** BUILD STARTED4: vpx-${version} for ${1} **"
 
 case $1 in
   # libvpx does not provide armv5 build option
