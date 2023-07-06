@@ -1,4 +1,6 @@
 #!/bin/bash
+
+set -x #echo on
 . _settings.sh "$@"
 
 pushd x264 || exit
