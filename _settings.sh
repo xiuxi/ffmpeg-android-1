@@ -184,7 +184,7 @@ if [[ ${STANDALONE_TOOLCHAINS} == 1 ]]; then
   CXX_=clang++
 
   if [[ ! -e ${TOOLCHAIN_PREFIX}/${NDK_ABIARCH} ]]; then
-    rm -rf ${TOOLCHAIN_PREFIX}
+    echo "1" # rm -rf ${TOOLCHAIN_PREFIX}
 
   # Create standalone toolchains for the specified architecture - use .py instead of the old .sh
   # However for ndk--r19b => Instead use:

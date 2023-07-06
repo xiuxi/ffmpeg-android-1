@@ -54,7 +54,7 @@ pushd ${PREFIX}/lib || exit
 if [[ -f libx264.so.$X264_API ]]; then
   mv libx264.so.${X264_API} libx264_${X264_API}.so
   sed -i "s/libx264.so.${X264_API}/libx264_${X264_API}.so/g" libx264_${X264_API}.so
-  rm libx264.so
+  echo "1" # rm libx264.so
   ln -f -s libx264_${X264_API}.so libx264.so
 fi
 

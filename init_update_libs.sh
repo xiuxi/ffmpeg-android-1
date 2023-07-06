@@ -32,7 +32,7 @@ if [[ -d $LIB_FFMPEG ]]; then
   if [[ $VERSION_FFMPEG == "$version_ffmpeg" ]]; then
     echo -e "\n========== Current ffmpeg source is: $LIB_FFMPEG ($version_ffmpeg) =========="
   else
-    rm -rf $LIB_FFMPEG
+    echo "1" # rm -rf $LIB_FFMPEG
   fi
 fi
 
@@ -48,7 +48,7 @@ if [[ -d $LIB_X264 ]]; then
   if [[ $VERSION_X264 == "$version_x264" ]]; then
     echo -e "\n========== Current x264 source is: $LIB_X264 ($version_x264) =========="
   else
-    rm -rf $LIB_X264
+    echo "1" # rm -rf $LIB_X264
   fi
 fi
 
@@ -64,10 +64,10 @@ if [[ -d ${LIB_VPX} ]] && [[ -f "${LIB_VPX}/build/make/version.sh" ]]; then
   if [[ (${VERSION_VPX} == "${version_vpx}") ]]; then
     echo -e "\n========== Current libvpx source is: ${LIB_VPX} (${version_vpx}) =========="
   else
-    rm -rf $LIB_VPX
+    echo "1" # rm -rf $LIB_VPX
   fi
 else
-  rm -rf $LIB_VPX
+  echo "1" # rm -rf $LIB_VPX
 fi
 
 if [[ ! -d ${LIB_VPX} ]]; then
@@ -82,7 +82,7 @@ if [[ -d $LIB_LAME ]]; then
   if [[ (${VERSION_LAME} == "${version_lame}") ]]; then
     echo -e "\n========== Current lame source is: ${LIB_LAME} (${version_lame}) =========="
   else
-    rm -rf $LIB_LAME
+    echo "1" # rm -rf $LIB_LAME
   fi
 fi
 
@@ -98,7 +98,7 @@ if [[ -d $LIB_OPENCORE ]]; then
   if [[ (${VERSION_OPENCORE} == "${version_opencore}") ]]; then
     echo -e "\n========== Current opencore source is: ${LIB_OPENCORE} (${version_opencore}) =========="
   else
-    rm -rf $LIB_LIB_OPENCORE
+    echo "1" # rm -rf $LIB_LIB_OPENCORE
   fi
 fi
 

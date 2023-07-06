@@ -26,7 +26,7 @@ for ((i=0; i < ${#ABIS[@]}; i++))
     if [[ $# -eq 0 ]] || [[ "$1" == "${ABIS[i]}" ]]; then
       # Do not build 64-bit ABI if ANDROID_API is less than 21 - minimum supported API level for 64 bit.
       [[ ${ANDROID_API} -lt 21 ]] && ( echo "${ABIS[i]}" | grep 64 > /dev/null ) && continue;
-      rm -rf ${TOOLCHAIN_PREFIX}
+      echo "1" # rm -rf ${TOOLCHAIN_PREFIX}
 
       # $1 = architecture
       # $2 = required for proceed to start setup default compiler environment variables
