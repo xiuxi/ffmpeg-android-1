@@ -1,3 +1,13 @@
+tar -xf source/ffmpeg-4.4.tar.bz2
+tar -xf source/lame-3.100.tar.gz
+tar -xf source/v1.10.0.tar.gz
+tar -xf source/x264-stable.tar.bz2
+
+root@vultr:~/ffmpeg-android-1# mv ffmpeg-4.4 ffmpeg
+root@vultr:~/ffmpeg-android-1# mv lame-3.100 lame
+root@vultr:~/ffmpeg-android-1# mv libvpx-1.10.0 libvpx
+root@vultr:~/ffmpeg-android-1# mv x264-stable x264
+
 https://dl.google.com/android/repository/android-ndk-r21e-linux-x86_64.zip
 
 # ffmpeg-android
