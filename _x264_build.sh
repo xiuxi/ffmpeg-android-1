@@ -34,8 +34,9 @@ fi
 make clean
 
 echo "111"
-echo ${PREFIX} ${PREFIX} ${CROSS_PREFIX} ${NDK_SYSROOT} ${HOST}  ${NDK_SYSROOT} ${NDK_ABIARCH}  ${NDK_SYSROOT} ${DISASM} \ ${BITDEPTH} 
+echo ${PREFIX} ${PREFIX} ${CROSS_PREFIX} ${NDK_SYSROOT} ${HOST}  ${NDK_SYSROOT} ${NDK_ABIARCH}  ${NDK_SYSROOT} ${DISASM}  ${BITDEPTH} 
 echo "222"
+pwd
 
 ./configure \
   --prefix=${PREFIX} \
