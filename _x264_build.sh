@@ -55,7 +55,9 @@ pwd
   ${BITDEPTH} \
   --disable-cli # || exit 1
 
-make -j${HOST_NUM_CORES} install || exit 1
+# make -j${HOST_NUM_CORES} install || exit 1
+make 
+make install
 
 pushd ${PREFIX}/lib || exit
 if [[ -f libx264.so.$X264_API ]]; then
