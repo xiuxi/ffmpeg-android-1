@@ -33,6 +33,23 @@ fi
 
 make clean
 
+echo "./configure \
+  --prefix=${PREFIX} \
+  --includedir=${PREFIX}/include/x264 \
+  --cross-prefix=${CROSS_PREFIX} \
+  --sysroot=${NDK_SYSROOT} \
+  --host=${HOST} \
+  --extra-cflags="-isystem ${NDK_SYSROOT}/usr/include/${NDK_ABIARCH} -isystem ${NDK_SYSROOT}/usr/include" \
+  ${DISASM} \
+  --enable-shared \
+  --enable-static \
+  --enable-pic \
+  --enable-strip \
+  --disable-thread \
+  --disable-opencl \
+  ${BITDEPTH} \
+  --disable-cli"
+
 ./configure \
   --prefix=${PREFIX} \
   --includedir=${PREFIX}/include/x264 \
