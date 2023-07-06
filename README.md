@@ -1,3 +1,5 @@
+https://dl.google.com/android/repository/android-ndk-r21e-linux-x86_64.zip
+
 # ffmpeg-android
 
 * FFmpeg for Android with libvpx, x264 and lame options. The scripts in this repository are configured to build:
