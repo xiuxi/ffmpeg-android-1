@@ -53,7 +53,7 @@ pwd
   --disable-thread \
   --disable-opencl \
   ${BITDEPTH} \
-  --disable-cli || exit 1
+  --disable-cli # || exit 1
 
 make -j${HOST_NUM_CORES} install || exit 1
 
